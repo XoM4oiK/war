@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - 80 лет Победы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>80 лет Великой Победы</h1>
+        <p><strong>1945-2025 - Помним! Гордимся! Чтим!</strong></p>
+    </header>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <button class="mobile-menu">☰</button>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="timeline.html">Хронология</a>
+                <a href="gallery.html" class="active">Галерея</a>
+                <a href="writers.html">Писатели</a>
+                <a href="media.html">Фильмы и Музыка</a>
+                <a href="main.html">О проекте</a>
+                <a href="stats.html">Итоги</a>
+                <a href="heroes.html">Герои</a>
+                <a href="memory.html">Память</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="page-content">
+            <h1 class="page-title">Фотогалерея Памяти</h1>
+            <p class="book"><strong>Архивные фотографии, современные снимки памятных мест и событий, связанных с Великой Отечественной войной.</strong></p>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">
+                    <span class="filter-icon">🖼️</span>
+                    Все фото
+                    <span class="filter-count">12</span>
+                </button>
+                <button class="filter-btn" data-filter="veterans">
+                    <span class="filter-icon">🎖️</span>
+                    Ветераны
+                    <span class="filter-count">2</span>
+                </button>
+                <button class="filter-btn" data-filter="memorials">
+                    <span class="filter-icon">🏛️</span>
+                    Мемориалы
+                    <span class="filter-count">4</span>
+                </button>
+                <button class="filter-btn" data-filter="archival">
+                    <span class="filter-icon">📜</span>
+                    Архивные
+                    <span class="filter-count">5</span>
+                </button>
+                <button class="filter-btn" data-filter="modern">
+                    <span class="filter-icon">📸</span>
+                    Современные
+                    <span class="filter-count">5</span>
+                </button>
+            </div>
+
+            <div class="active-filter-indicator">
+                <span class="indicator-label">Показываем:</span>
+                <span class="indicator-value">Все фото</span>
+                <span class="indicator-count">12 фотографий</span>
+            </div>
+
+            <div class="gallery-grid-modern">
+                <div class="gallery-card" data-category="veterans archival">
+                    <div class="gallery-image">
+                        <img src="./Ветераны_ВОВ_(день_ВМФ).jpg" alt="Встреча ветеранов">
+                        <div class="gallery-category veterans">Ветераны</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Встреча ветеранов</h3>
+                        <p>Ветераны — живая история мужества и героизма. Их подвиг навсегда останется в памяти благодарных потомков.</p>
+                        <div class="gallery-date">Современное фото</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="archival">
+                    <div class="gallery-image">
+                        <img src="./parad.jpeg" alt="Парад Победы 1945">
+                        <div class="gallery-category archival">Архивные</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Парад Победы 1945</h3>
+                        <p>Легендарный Парад Победы на Красной площади 24 июня 1945 года. Маршал Георгий Жуков принимал парад.</p>
+                        <div class="gallery-date">1945 год</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="memorials modern">
+                    <div class="gallery-image">
+                        <img src="./firew.jpg" alt="Вечный огонь">
+                        <div class="gallery-category memorials">Мемориалы</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Вечный огонь</h3>
+                        <p>Могила Неизвестного солдата у Кремлевской стены. "Имя твоё неизвестно, подвиг твой бессмертен".</p>
+                        <div class="gallery-date">Современное фото</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="archival">
+                    <div class="gallery-image">
+                        <img src="./tanks.jpg" alt="Военная техника">
+                        <div class="gallery-category archival">Архивные</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Легендарная техника</h3>
+                        <p>Советские танки Т-34 — лучшие средние танки Второй мировой войны, символ мощи Красной Армии.</p>
+                        <div class="gallery-date">1943 год</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="archival">
+                    <div class="gallery-image">
+                        <img src="./rewards.jpg" alt="Боевые награды">
+                        <div class="gallery-category archival">Архивные</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Боевые награды</h3>
+                        <p>Ордена и медали Великой Отечественной войны. Каждая награда — свидетельство мужества и героизма.</p>
+                        <div class="gallery-date">Военные годы</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="memorials modern">
+                    <div class="gallery-image">
+                        <img src="./hatyn.jpg" alt="Мемориал Хатынь">
+                        <div class="gallery-category memorials">Мемориалы</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Мемориал Хатынь</h3>
+                        <p>Символ трагедии белорусского народа. 149 жителей деревни были сожжены заживо 22 марта 1943 года.</p>
+                        <div class="gallery-date">Современное фото</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="memorials modern">
+                    <div class="gallery-image">
+                        <img src="./memorial.png" alt="Мемориалы славы">
+                        <div class="gallery-category memorials">Мемориалы</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Мемориалы славы</h3>
+                        <p>Мемориальные комплексы, посвященные великим сражениям и подвигам советского народа.</p>
+                        <div class="gallery-date">Современное фото</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="veterans modern">
+                    <div class="gallery-image">
+                        <img src="./polk.png" alt="Бессмертный полк">
+                        <div class="gallery-category veterans">Ветераны</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Бессмертный полк</h3>
+                        <p>Народная акция, когда люди проходят колонной с фотографиями своих родственников-фронтовиков.</p>
+                        <div class="gallery-date">Современное фото</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="modern">
+                    <div class="gallery-image">
+                        <img src="./fireworks.jpg" alt="Салют Победы">
+                        <div class="gallery-category modern">Современные</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Салют Победы</h3>
+                        <p>Праздничный салют в честь Дня Победы. Традиция, начавшаяся 9 мая 1945 года.</p>
+                        <div class="gallery-date">Современное фото</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="memorials modern">
+                    <div class="gallery-image">
+                        <img src="./brest-fortress.jpg" alt="Брестская крепость">
+                        <div class="gallery-category memorials">Мемориалы</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Брестская крепость-герой</h3>
+                        <p>Одна из первых приняла на себя удар врага. Героическая оборона крепости продолжалась с 22 июня до конца июля 1941 года.</p>
+                        <div class="gallery-date">Современное фото</div>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="archival">
+                    <div class="gallery-image">
+                        <img src="./partizans.jpg" alt="Белорусские партизаны">
+                        <div class="gallery-category archival">Архивные</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Белорусские партизаны</h3>
+                        <p>Беларусь стала настоящим партизанским краем. К концу 1943 года под контролем партизан находилось 60% территории.</p>
+                        <div class="gallery-date">1943 год</div>
+                    </div>
+                </div>
+
+                <div class="gallery-card" data-category="archival">
+                    <div class="gallery-image">
+                        <img src="./minsk_liberation.jpg" alt="Освобождение Минска">
+                        <div class="gallery-category archival">Архивные</div>
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Освобождение Минска</h3>
+                        <p>3 июля 1944 года в ходе операции "Багратион" столица Беларуси была освобождена от немецко-фашистских захватчиков.</p>
+                        <div class="gallery-date">1944 год</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 80 лет Великой Победы. Никто не забыт, ничто не забыто!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
